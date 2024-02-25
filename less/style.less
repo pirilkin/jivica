@@ -1,0 +1,212 @@
+@import '../fonts/MyriadPro/stylesheet.css';
+.ios,
+.ios * {
+    // causes dom events events to be fired
+    cursor: pointer;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: 'Myriad Pro', sans-serif, 'Arial';
+    font-weight: normal;
+    .bg('/img/body-bg.jpg');
+    // background: #000;
+    // display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+}
+.img-phone{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    &-bot{
+        height: 12px;
+    }
+}
+.active{
+    // border-bottom: 2px solid @blueBorder;
+}
+.title {
+    color: #282828;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 22px;
+
+    .lg-block( {
+            // font-size: 22px;
+        }
+
+    );
+
+    .sm-block( {
+            font-size: 30px;
+        }
+
+    );
+
+    &-blue {
+        color: @blue;
+    }
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+input {
+    background: none;
+    width: 100%;
+    border: 2px solid @blueBorder;
+    border-radius: 3px;
+
+    &:focus {
+        outline: none;
+        padding-left: 6px;
+    }
+    &[type='submit']{
+        -webkit-appearance: none;
+    }
+}
+// input[type='text']:focus,
+// .formSection-main-block-img:focus{
+//     box-shadow: 0px 0px 20px(grey);
+// }
+
+.two,
+.four,
+.six,
+.review,
+.nine,
+.contacts {
+    background: rgba(255, 255, 255, 0.5);
+}
+.five,
+.seven{
+    overflow: hidden;
+}
+.shadow {
+    text-shadow:
+        -0 -3px 1px #FFFFFF,
+        0 -3px 1px #FFFFFF,
+        -0 3px 1px #FFFFFF,
+        0 3px 1px #FFFFFF,
+        -3px -0 1px #FFFFFF,
+        3px -0 1px #FFFFFF,
+        -3px 0 1px #FFFFFF,
+        3px 0 1px #FFFFFF,
+        -1px -3px 1px #FFFFFF,
+        1px -3px 1px #FFFFFF,
+        -1px 3px 1px #FFFFFF,
+        1px 3px 1px #FFFFFF,
+        -3px -1px 1px #FFFFFF,
+        3px -1px 1px #FFFFFF,
+        -3px 1px 1px #FFFFFF,
+        3px 1px 1px #FFFFFF,
+        -2px -3px 1px #FFFFFF,
+        2px -3px 1px #FFFFFF,
+        -2px 3px 1px #FFFFFF,
+        2px 3px 1px #FFFFFF,
+        -3px -2px 1px #FFFFFF,
+        3px -2px 1px #FFFFFF,
+        -3px 2px 1px #FFFFFF,
+        3px 2px 1px #FFFFFF,
+        -3px -3px 1px #FFFFFF,
+        3px -3px 1px #FFFFFF,
+        -3px 3px 1px #FFFFFF,
+        3px 3px 1px #FFFFFF,
+        -3px -3px 1px #FFFFFF,
+        3px -3px 1px #FFFFFF,
+        -3px 3px 1px #FFFFFF,
+        3px 3px 1px #FFFFFF;
+
+    .sm-block( {
+            text-shadow: -0 -2px 1px #FFFFFF,
+            0 -2px 1px #FFFFFF,
+            -0 2px 1px #FFFFFF,
+            0 2px 1px #FFFFFF,
+            -2px -0 1px #FFFFFF,
+            2px -0 1px #FFFFFF,
+            -2px 0 1px #FFFFFF,
+            2px 0 1px #FFFFFF,
+            -1px -2px 1px #FFFFFF,
+            1px -2px 1px #FFFFFF,
+            -1px 2px 1px #FFFFFF,
+            1px 2px 1px #FFFFFF,
+            -2px -1px 1px #FFFFFF,
+            2px -1px 1px #FFFFFF,
+            -2px 1px 1px #FFFFFF,
+            2px 1px 1px #FFFFFF,
+            -2px -2px 1px #FFFFFF,
+            2px -2px 1px #FFFFFF,
+            -2px 2px 1px #FFFFFF,
+            2px 2px 1px #FFFFFF,
+            -2px -2px 1px #FFFFFF,
+            2px -2px 1px #FFFFFF,
+            -2px 2px 1px #FFFFFF,
+            2px 2px 1px #FFFFFF;
+        }
+
+    );
+}
+.sm-block-hidden{
+    display: block !important; 
+    .sm-block({
+        display: none !important;        
+    });
+}
+.md-block-hidden{
+    display: none !important;
+    .sm-block({
+        display: block !important;        
+    });
+}
+
+.line {
+    position: relative;
+    // z-index: 2;
+    &-item {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #000;
+        top: 50%;
+        box-sizing: content-box;
+        border-radius: 2px;
+        border: 1px solid @white;
+    //    z-index: 1;
+        // transform: translateY(-50%);
+        .sm-block({
+            height: 1px;
+        });
+        
+    }
+}
+
+
+@import './params/var.less';
+@import './params/mix.less';
+@import './header.less';
+@import './two.less';
+@import './three.less';
+@import './sub-three.less';
+@import './four.less';
+@import './five.less';
+@import './six.less';
+@import './seven.less';
+@import './review.less';
+@import './eight.less';
+@import './nine.less';
+@import './formSection.less';
+@import './contacts.less';
+@import './contacts-call.less';
+@import './footer.less';

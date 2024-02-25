@@ -1,0 +1,121 @@
+.three{
+    padding: 25px 0 17px;
+    // .bg('/img/third-bg_02.jpg');
+    .sm-block({
+        display: none;
+    });
+    &-title{
+        margin-bottom: 30px;
+    }
+    .col-xl-12{
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        &:nth-child(2){
+            
+        }
+        &:nth-child(5){
+            padding-left: 25px;
+        }
+        &:nth-child(4){
+            padding-left: 0;
+        }
+
+        &-right{
+            .lg-block({
+                justify-content: flex-start;
+                min-width: 50%;
+            });
+            &-img{
+                .lg-block({
+                    width: 75px;
+                    border: 2px solid @white;
+                });
+                .md-block({
+                    width: 50px;
+                    border: 1px solid @white;
+                });
+            }
+        }
+
+
+    }
+    &-left{
+        text-align: right;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-right: 0;
+        .three-block:nth-child(2){
+            padding-right: 55px;
+            .md-block({
+                padding-right: 25px;
+            });
+        }
+        .three-block{
+            .sm-block({
+                flex-direction: column;
+            });
+        }
+        .three-block-content{
+            margin-right: 30px;
+        }
+    }
+    &-right{
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-right: 0;
+        padding-left: 0;
+        .md-block({
+            width: 25px;
+        });
+        .three-block{
+            .sm-block({
+                flex-direction: column-reverse;
+            });
+        }
+        .three-block:nth-child(2){
+            padding-left: 55px;
+            .md-block({
+                padding-left: 25px;
+            });
+        }
+        .three-block-content{
+            margin-left: 20px;
+                    }
+    }
+    &-skeleton{
+        .lg-block({
+            height: 250px;
+        });
+    }
+    &-block{
+
+        &-content{
+            
+            .lg-block({
+                text-align: center;
+                font-size: 18px;
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+            });
+            .md-block({
+                font-size: 15px;
+                font-weight: normal;
+            });
+            .sm-block({
+                // font-size: 10px;
+            });
+        }
+    }
+}

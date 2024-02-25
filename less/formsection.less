@@ -1,0 +1,178 @@
+.formSection{
+    // .bg('/img/form-bg_02.jpg');
+    padding: 26px 15px;
+    font-weight: bold;
+   
+    &-form{
+        background: none ;
+        max-width: 855px !important;
+        
+        font-size: 67.06px;
+        line-height: 1.2;
+        margin: 0 auto;
+        border: 6px solid @formBorder;
+        border-radius: 13px;
+        .lg-block({
+            font-size: 55px;
+        });
+        .md-block({
+            font-size: 45px;
+        });
+        .sm-block({
+            border: 3px solid @formBorder;
+            font-size: 35px;
+        });
+        &-title{
+            // font-size: 67.06 px;
+        }
+        &-price{
+            width: 80%;
+            margin: 0 auto 25px;
+            .lg-block({
+                width: 100%;
+            });
+        }
+        &-item{
+            margin: 0 auto;
+            .sm-block({
+                font-size: 25px;
+            });
+        }
+    }
+    &-main{
+        width: 100%;
+        padding: 0 55px;
+        .lg-block({
+            padding: 0 2px;
+        });
+        form{
+            position: relative;
+            input{
+                height: 100px;
+                background: @white;
+                border-radius: 9px;
+                border: 2px solid @blueBorder;
+                font-size: 56.25px;
+                margin-bottom: 23px;
+                padding-left: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .lg-block({
+                    height: 90px;
+                    font-size: 45px;
+                });
+                .md-block({
+                    height: 70px;
+                    font-size: 35px;
+                });
+                .sm-block({
+                    margin-bottom: 10px;
+                    height: 50px;
+                    font-size: 25px;
+                });
+                .mini-block({
+                    font-size: 20px;
+                });
+                &::placeholder{
+                    font-size: 56.25px;
+                    color: #000;
+                    .lg-block({
+                        font-size: 45px;
+                    });
+                    .md-block({
+                        font-size: 35px;
+                    });
+                    .sm-block({
+                        font-size: 25px;
+                    });
+                    .mini-block({
+                        font-size: 20px;
+                    });
+                }
+                
+            }
+            // img{
+            //     width: 100px;
+            //     position: absolute;
+            //     left: 10px;
+            //     bottom: 238px;
+            // }
+            .online_phone{
+                padding-left: 20px;
+                width: 80%;
+               margin-bottom: 0px;
+               height: 100%;
+               border: none;
+               background: none;
+               border-radius: none;
+               .sm-block({
+                   width: 85%;
+                padding-left: 0;
+            });
+            }
+            input[type='submit']{
+                margin-top: 35px;
+                height: 142px;
+                border-radius: 15px;
+                border: 6px solid @white;
+                font-size: 63.79px;
+                background: @submitbg;
+                color: @white;
+               padding-left: 0;
+                // text-align: center;
+                .lg-block({
+                    font-size: 45px;
+                });
+                .md-block({
+                    font-size: 35px;
+                });
+                .sm-block({
+                    border: 3px solid @white;
+                    border-radius: 6px;
+                    font-size: 25px;
+                    margin-top: 5px;
+                    height: 60px;
+                });
+            }
+        }
+        &-block-img{
+            // position: relative;   
+            display: flex;    
+            height: 100px;
+            background: @white;
+            border-radius: 9px;
+            border: 2px solid @blueBorder;
+            .lg-block({
+                height: 90px;
+                font-size: 45px;
+            });
+            .md-block({
+                height: 70px;
+                font-size: 35px;
+            });
+            .sm-block({
+                margin-bottom: 10px;
+                height: 50px;
+                font-size: 26px;
+            });
+        }
+        &-img{
+            // position: absolute;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .sm-block({
+                width: 15%;
+            });
+            img{
+                width: 75%;
+                .sm-block({
+                    width: 70%;
+                });
+            }
+            
+        }
+    }
+}

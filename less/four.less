@@ -1,0 +1,49 @@
+.four{
+    // .bg('/img/four-bg_02.jpg');
+    // background-color: rgba(255, 255, 255, 0.2);
+    padding: 18px 0 15px;
+    overflow: hidden;
+    &-title{
+        margin-bottom: 0;
+    }
+    &-content{
+        margin: 15px 0;
+        font-size: 19.53px;
+        line-height: 22px;
+        max-width: 570px;
+        .md-block({
+            font-size: 15px;
+            line-height: 15px;
+        });
+        .sm-block({
+            // font-size: 12px;
+            // line-height: 12px;
+        });
+        
+        &__bold{
+            font-weight: bold;
+        }
+        &:nth-child(1){
+            margin-top: 30px;
+        }
+        &:nth-child(3){
+            max-width: 465px;
+        }
+    }
+    &-img{
+        // width: 100%;
+        .lg-block({
+            // max-height: 250px;
+        });
+        .sm-block({
+            // max-height: 150px;
+            
+        });
+        &__items{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    
+}

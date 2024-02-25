@@ -1,0 +1,287 @@
+.six {
+    // background: url('/img/six-bg_02.jpg');
+    // .bg('/img/six-bg_02.jpg');
+    padding: 20px 0 55px;
+
+    .lg-block( {
+            padding-bottom: 10px;
+        }
+
+    );
+
+    .container {
+        position: relative;
+    }
+
+    &-cup {
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        width: 50%;
+
+        .xl-block( {
+                left: 0;
+            }
+
+        );
+
+        .lg-block( {
+                display: none;
+            }
+
+        );
+    }
+
+    &-title {
+        // margin-bottom: 30px;
+    }
+
+    &-blue {
+        font-size: 19.53px;
+        color: @blue;
+    }
+
+    &-content-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        // margin-top: 15px;
+        &-ul {
+            margin-left: 30px;
+
+            .sm-block( {
+                    //    margin-left: 0;
+                }
+
+            );
+
+            &-li {
+                color: @blue;
+                list-style: disc;
+                margin-bottom: 17px;
+
+                .sm-block( {
+                        // list-style: none;
+                        margin-bottom: 7px;
+                        text-align: left;
+                    }
+
+                );
+
+                &-p {
+                    color: #000;
+
+                    .lg-block( {
+                            font-size: 18px;
+                            margin-bottom: 15px;
+                        }
+
+                    );
+
+                    .md-block( {
+                            font-size: 15px;
+                            margin-bottom: 15px;
+                        }
+
+                    );
+
+                    .sm-block( {
+                            list-style: none;
+                            // font-size: 10px;
+                            margin-bottom: 7px;
+                        }
+
+                    );
+
+                    span {
+                        font-weight: bold;
+                        .lg-block( {
+                                font-size: 18px;
+                                margin-bottom: 15px;
+                            }
+
+                        );
+
+                        .md-block( {
+                                font-size: 15px;
+                                margin-bottom: 15px;
+                            }
+
+                        );
+
+                        .sm-block( {
+                                font-size: 10px;
+                                margin-bottom: 7px;
+                            }
+
+                        );
+                    }
+                }
+            }
+        }
+
+    }
+
+    &-leg {
+        min-width: 178px;
+
+
+        .md-block( {
+
+                min-width: 50%;
+                // display: none;
+            }
+
+        );
+
+        &-block {
+            display: flex;
+            justify-content: center;
+            .sm-block( {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 25px;
+                }
+
+            );
+        }
+    }
+
+    &-block {
+        text-align: right;
+
+        .sm-block( {
+                text-align: center;
+            }
+
+        );
+
+        &-subtitle {
+            font-weight: bold;
+            font-size: 23.44px;
+
+            .lg-block( {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+
+            );
+
+            .md-block( {
+                    font-size: 15px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                }
+
+            );
+
+            .sm-block( {
+
+                    // font-size: 10px;
+                    margin-bottom: 7px;
+                }
+
+            );
+        }
+
+        &-content {
+            font-weight: normal;
+            font-size: 19.53px;
+            line-height: 20px;
+            margin-bottom: 15px;
+
+            .lg-block( {
+                    font-size: 18px;
+                    margin-bottom: 45px;
+                }
+
+            );
+
+            .md-block( {
+                    font-size: 15px;
+                    margin-bottom: 35px;
+                    text-align: left;
+                }
+
+            );
+
+            .sm-block( {
+                    // font-size: 10px;
+                    line-height: 15px;
+                    margin-bottom: 17px;
+                    margin-left: 15px;
+                    text-align: left;
+                }
+
+            );
+
+            &-blue {
+                font-weight: bold;
+                color: @blue;
+                margin-bottom: 55px;
+                .sm-block( {
+                        // font-size: 10px;
+                        // font-weight: normal;
+                        text-align: center;
+                        line-height: 15px;
+                        margin: 0 auto;
+                        margin-bottom: 17px;
+                        // margin-left: 15px;
+                        width: 80%;
+                        
+                    }
+
+                );
+            }
+        }
+
+        &-order {
+            text-transform: uppercase;
+            background: @submitbg;
+            box-shadow: 0 0 8px(@blue);
+            color: @white;
+            font-size: 32.73px;
+            font-weight: bold;
+            // height: 26px;
+            padding: 20px 113px;
+
+            .lg-block( {
+                    font-size: 18px;
+                    padding: 18px 85px;
+                }
+
+            );
+
+            .md-block( {
+                    font-size: 15px;
+                    padding: 15px 70px;
+                }
+
+            );
+
+            .sm-block( {
+                    font-size: 10px;
+                    padding: 12px 20px;
+                    display: block;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 50%;
+                    border-radius: 3px;
+                }
+
+            );
+        }
+    }
+
+    &-cup-add {
+        display: none;
+
+        .sm-block( {
+                display: block;
+                margin-bottom: 0px;
+            }
+
+        );
+    }
+}
